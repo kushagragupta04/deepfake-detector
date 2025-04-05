@@ -8,6 +8,7 @@ function UploadForm() {
   const [message, setMessage] = useState("");
   const [showDropBox, setShowDropBox] = useState(true);
   const [isFadingOut, setIsFadingOut] = useState(false);
+  
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];

@@ -9,7 +9,7 @@ function Results() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 10000); // simulate loader transition
+    }, 5000); // simulate loader transition
 
     return () => clearTimeout(timeout);
   }, []);
@@ -41,14 +41,35 @@ function Results() {
   const { verdict, avg_fake_confidence } = state || {};
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center text-white">
-      <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-10 text-center w-11/12 md:w-2/5 shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Analysis Complete</h2>
-        <p className="text-xl text-green-400 mb-2">Verdict: {verdict}</p>
-        <p className="text-md text-blue-400">Avg. Fake Confidence: {avg_fake_confidence}%</p>
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center text-white">
+      <div className="w-11/12 md:w-2/5 rounded-3xl p-8 md:p-10 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl transition-all duration-300">
+        <h2 className="text-3xl font-extrabold text-white mb-6 tracking-wide">
+          Analysis Complete
+        </h2>
+        <div className="space-y-4">
+          <p className="text-2xl font-semibold text-white">
+            Verdict:{" "}
+            <span
+              className={`font-bold ${
+                verdict.toLowerCase() === "fake"
+                  ? "text-red-500"
+                  : "text-green-400"
+              }`}
+            >
+              {verdict}
+            </span>
+          </p>
+          <p className="text-md text-blue-300">
+            Avg. Fake Confidence:{" "}
+            <span className="text-white font-medium">{avg_fake_confidence}%</span>
+          </p>
+        </div>
       </div>
     </div>
   );
+  
+  
+  
 }
 
 export default Results;
