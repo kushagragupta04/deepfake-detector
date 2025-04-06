@@ -9,25 +9,25 @@
 ## 🖥️ Tech Stack
 
 ### Frontend
-- ⚛️ **React.js** — Modern component-based UI
-- 💨 **Tailwind CSS** — Utility-first styling with responsive design
-- 🧙‍♂️ **shadcn/ui** — Pre-styled, accessible components
-- 🌈 **Glassmorphism UI** — Sleek visual design with subtle blurs and shadows
-- ⚙️ **React Router DOM** — Client-side routing for seamless navigation
+- **React.js** — Modern component-based UI
+- **Tailwind CSS** — Utility-first styling with responsive design
+- **shadcn/ui** — Pre-styled, accessible components
+- **Glassmorphism UI** — Sleek visual design with subtle blurs and shadows
+- **React Router DOM** — Client-side routing for seamless navigation
 
 ---
 
 
 ### Key Backend Features
-- 🐍 **Python** with **FastAPI** — Fast and lightweight request handling
-- 🧠 **Custom-Trained Convolutional Neural Network (CNN)** — Detects signs of manipulation in facial features
-- ☁️ **AWS EC2** — Robust model hosting for scalable deployment
-- 📦 Optimized model inference pipeline for real-time performance
+- **Python** with **FastAPI** — Fast and lightweight request handling
+- **Custom-Trained Convolutional Neural Network (CNN)** — Detects signs of manipulation in facial features
+- **AWS EC2** — Robust model hosting for scalable deployment
+- Optimized model inference pipeline for real-time performance
 - Backend is handled seperately
 
 The frontend sends `.mp4` video files to the backend API, which returns:
-- ✅ A **verdict** (Real or Fake)
-- 📊 The **average fake confidence** score
+- A **verdict** (Real or Fake)
+- The **average fake confidence** score
 
 ---
 
@@ -65,6 +65,8 @@ npm run dev
 
 ---
 ## 📹 Live Demo
+
+Click below and watch live demo -
 
 [![Watch the demo](https://img.youtube.com/vi/CIwoXkKb1Ds/0.jpg)](https://www.youtube.com/watch?v=CIwoXkKb1Ds)
 
