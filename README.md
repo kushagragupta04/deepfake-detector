@@ -1,6 +1,6 @@
-# 🛡️ DeepShield — Deepfake Detection Frontend
+# 🛡️ DeepShield — Deepfake Detection
 
-**DeepShield** is a sleek, responsive web application designed to detect deepfakes in video files. With a glassmorphic user interface and real-time backend integration, it provides an intuitive experience for users who want to verify media authenticity.
+DeepShield is a deepfake detection web application that uses a custom-trained Convolutional Neural Network to analyze facial features for signs of manipulation.
 
 <br/>
 
